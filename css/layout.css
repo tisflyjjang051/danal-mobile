@@ -33,6 +33,10 @@ button {
 .header {
   height: 60px;
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
 }
 .header .logo__link {
   display: flex;
@@ -131,4 +135,20 @@ button {
   background-color: #fff;
   border-radius: 10px;
   margin: 0 10px 0 20px;
+}
+.header .link {
+  position: absolute;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 14px;
+  border-radius: 100px;
+  top: 15px;
+  background-color: #297bf6;
+  color: #fff;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  overflow: hidden;
+  text-shadow: 1px 1px 0px #074bb2,2px 2px 0px #074bb2,3px 3px 0px #074bb2,4px 4px 0px #074bb2,5px 5px 0px #074bb2,6px 6px 0px #074bb2,7px 7px 0px #074bb2,8px 8px 0px #074bb2,9px 9px 0px #074bb2,10px 10px 0px #074bb2,11px 11px 0px #074bb2,12px 12px 0px #074bb2,13px 13px 0px #074bb2,14px 14px 0px #074bb2,15px 15px 0px #074bb2,16px 16px 0px #074bb2,17px 17px 0px #074bb2,18px 18px 0px #074bb2,19px 19px 0px #074bb2,20px 20px 0px #074bb2;
 }

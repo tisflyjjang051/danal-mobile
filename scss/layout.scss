@@ -33,6 +33,10 @@ button {
   $h: 60px;
   height: $h;
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
   .logo {
     &__link {
       display: flex;
@@ -145,5 +149,21 @@ button {
         }
       }
     }
+  }
+  .link {
+    position: absolute;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 100px;
+    top: 15px;
+    background-color: $blue;
+    color: #fff;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    overflow: hidden;
+    @include longShadow(20, darken($blue, 20));
   }
 }

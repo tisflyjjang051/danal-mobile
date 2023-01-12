@@ -1,22 +1,24 @@
 .container {
-  width: 1360px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .section {
-  padding: 120px 0;
+  padding: 50px 0;
   background-color: #fff;
 }
 .section .container {
-  min-height: 500px;
+  min-height: 300px;
 }
 .section .container .title-box h2 {
-  font-size: 78px;
+  font-size: clamp(24px, 7.5vw, 36px);
   font-weight: 700;
   margin-bottom: 30px;
 }
 .section .container .title-box p {
-  font-size: 24px;
+  font-size: clamp(14px, 3.5vw, 24px);
   margin-bottom: 100px;
 }
 .section .container .title-box a {
@@ -43,11 +45,11 @@
   object-fit: cover;
 }
 .main-video__txt {
-  font-size: 96px;
+  font-size: clamp(36px, 7.5vw, 48px);
   font-weight: 700;
   position: absolute;
   top: 50%;
-  left: 100px;
+  left: 30px;
   transform: translateY(-50%);
   color: #fff;
 }
@@ -59,11 +61,11 @@
 }
 .main-video .arrow {
   position: absolute;
-  left: 100px;
-  bottom: 100px;
+  left: 30px;
+  bottom: 60px;
   background-color: #fff;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -72,14 +74,13 @@
 }
 
 .about {
-  padding: 200px 0;
   text-align: center;
   background-image: url("../images/main/bg_introduce.png");
   background-position: left 50% bottom 0;
   margin-top: 100vh;
 }
 .about .title-box h2 {
-  font-size: 90px;
+  font-size: clamp(36px, 7.5vw, 48px);
   font-weight: 700;
   margin-bottom: 50px;
 }
@@ -87,17 +88,16 @@
   color: #297bf6;
 }
 .about .title-box p {
-  font-size: 40px;
   line-height: 1.25;
 }
 .about .btn {
   display: inline-block;
   border-radius: 100px;
   margin-top: 50px;
-  padding: 20px 40px;
+  padding: 15px 30px;
   background-color: #297bf6;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   overflow: hidden;
@@ -110,10 +110,10 @@
 }
 .tech .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .tech .container .contents {
-  width: 50%;
+  width: auto;
 }
 .tech .container .icon-list {
   display: flex;
@@ -122,7 +122,7 @@
 }
 .tech .container .icon-list li {
   width: 33.3333333333%;
-  padding: 0 30px;
+  padding: 0 15px;
   box-sizing: border-box;
   text-align: center;
 }
