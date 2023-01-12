@@ -39,7 +39,7 @@
             </ul>
           </li>
           <li>
-            <a href="">서비스</a>
+            <a href="#">서비스</a>
             <ul class="gnb__list--sub">
               <li><a href="">휴대폰결제</a></li>
               <li><a href="">신용카드결제</a></li>
@@ -373,45 +373,33 @@
     </footer>
 
     <script>
-      //console.log(window);
-      //window.alert("아이디가 맞지 않습니다.");
-      //dom  (document object model);
+      // 찾아서 이벤트 걸고 제어하면 된다.
 
-      //f(x) = x+5;
+      // 내가 너의 이름을 불렀을때 꽃이 되었다.
 
-      function plus5() {
-        console.log(x + 5);
-      }
-      function bank(money) {
-        console.log(money * 1.045);
-      }
+      const btnAll = document.querySelector(".btn--all");
       const header = document.querySelector(".header");
-      const gnb = document.querySelector(".gnb");
-      gnb.addEventListener("mouseenter", function () {
-        header.classList.add("on");
-      });
-      gnb.addEventListener("mouseleave", function () {
-        header.classList.remove("on");
+      const depth01 = document.querySelector(".gnb .gnb__list > li > a");
+
+      depth01.addEventListener("click", function (e) {
+        //e.preventDefault();
+        console.log(e);
+        console.log("a를 클릭");
+        return false;
       });
 
-      const swiper = new Swiper(".platform-swiper", {
-        slidesPerView: "auto",
-        spaceBetween: 50,
-        loop: true,
-        navigation: {
-          nextEl: ".platform-swiper .btn--next",
-          prevEl: ".platform-swiper .btn--prev",
-        },
-      });
-      // scroll event
-      window.addEventListener("scroll", function () {
-        // throttle, debounce
-        // console.log(window.scrollY);
-        if (window.scrollY > 0) {
-          header.classList.add("scroll");
+      btnAll.addEventListener("click", function () {
+        // console.log("click 했음");
+        const isContains = header.classList.contains("on");
+        if (isContains) {
+          header.classList.remove("on");
         } else {
-          header.classList.remove("scroll");
+          header.classList.add("on");
         }
+        //header.classList.toggle("on");
+        //console.log(isContains);
+        //header.classList.add("on");
+        //header.classList.remove("on");
       });
     </script>
   </body>
