@@ -112,6 +112,9 @@ button {
   color: #fff;
   display: none;
 }
+.header .gnb__list--sub.on {
+  display: block;
+}
 .header .gnb__list--sub li a {
   display: flex;
   padding: 15px 0 15px 30px;

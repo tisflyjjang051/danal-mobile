@@ -375,18 +375,26 @@
     <script>
       // 찾아서 이벤트 걸고 제어하면 된다.
 
-      // 내가 너의 이름을 불렀을때 꽃이 되었다.
-
       const btnAll = document.querySelector(".btn--all");
       const header = document.querySelector(".header");
-      const depth01 = document.querySelector(".gnb .gnb__list > li > a");
+      const depth01 = document.querySelectorAll(".gnb .gnb__list > li > a");
+      console.log("🚀 ~ file: index.html:381 ~ depth01", depth01);
+      const depth02 = document.querySelectorAll(".gnb .gnb__list > li > .gnb__list--sub");
 
-      depth01.addEventListener("click", function (e) {
-        //e.preventDefault();
-        console.log(e);
-        console.log("a를 클릭");
-        return false;
-      });
+      //if()
+      for (let i = 0; i < 6; i++) {
+        depth01[i].addEventListener("click", function (e) {
+          e.preventDefault();
+          //depth02.classList.toggle("on");
+          console.log(i);
+        });
+      }
+
+      // depth01.addEventListener("click", function (e) {
+      //   e.preventDefault();
+      //   depth02.classList.toggle("on");
+      //   //return false;
+      // });
 
       btnAll.addEventListener("click", function () {
         // console.log("click 했음");
