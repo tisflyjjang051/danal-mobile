@@ -315,6 +315,7 @@
                 <span class="sticker">food tech</span>
               </li>
             </ul>
+            <div class="pagination"></div>
             <button class="btn btn--prev"></button>
             <button class="btn btn--next"></button>
           </div>
@@ -429,6 +430,21 @@
         //console.log(isContains);
         //header.classList.add("on");
         //header.classList.remove("on");
+      });
+
+      new Swiper(".platform-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".platform-swiper .btn--next",
+          prevEl: ".platform-swiper .btn--prev",
+        },
+        pagination: {
+          el: ".platform-swiper .pagination",
+          type: "bullets",
+        },
       });
     </script>
   </body>
