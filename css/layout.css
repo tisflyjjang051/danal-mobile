@@ -152,3 +152,30 @@ button {
   overflow: hidden;
   text-shadow: 1px 1px 0px #074bb2,2px 2px 0px #074bb2,3px 3px 0px #074bb2,4px 4px 0px #074bb2,5px 5px 0px #074bb2,6px 6px 0px #074bb2,7px 7px 0px #074bb2,8px 8px 0px #074bb2,9px 9px 0px #074bb2,10px 10px 0px #074bb2,11px 11px 0px #074bb2,12px 12px 0px #074bb2,13px 13px 0px #074bb2,14px 14px 0px #074bb2,15px 15px 0px #074bb2,16px 16px 0px #074bb2,17px 17px 0px #074bb2,18px 18px 0px #074bb2,19px 19px 0px #074bb2,20px 20px 0px #074bb2;
 }
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 30px 0;
+}
+.footer .upper .logo img {
+  height: 40px;
+}
+.footer .upper .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.footer .upper .list li a {
+  display: block;
+}
+.footer .upper .select {
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+}
+.footer .lower {
+  padding-top: 30px;
+  font-size: 14px;
+}
