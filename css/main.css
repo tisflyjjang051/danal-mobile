@@ -269,6 +269,24 @@
 .platform .platform-swiper {
   position: relative;
 }
+.platform .platform-swiper .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.platform .platform-swiper .pagination .swiper-pagination-bullet {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  background: none;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+}
+.platform .platform-swiper .pagination .swiper-pagination-bullet-active {
+  background-color: #333;
+  width: 30px;
+}
 .platform .platform-list li {
   width: 200px;
   position: relative;
@@ -352,7 +370,7 @@
 
 .business .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .business .container .title-box h2 {
   color: #297bf6;
@@ -361,11 +379,11 @@
   color: #297bf6;
 }
 .business .img {
-  width: 800px;
-  height: 520px;
+  width: 100%;
+  aspect-ratio: 2/1;
   background-image: url("../images/main/img_partner.png");
   background-size: cover;
-  border-radius: 50px;
+  border-radius: 20px;
   background-position: center;
 }
 

@@ -273,6 +273,24 @@
   }
   .platform-swiper {
     position: relative;
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      .swiper-pagination-bullet {
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #333;
+        background: none;
+        border-radius: 50px;
+        transition: all 0.25s ease;
+        &-active {
+          background-color: #333;
+          width: 30px;
+        }
+      }
+    }
   }
   .platform-list {
     li {
@@ -357,7 +375,8 @@
 .business {
   .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    //justify-content: space-between;
     .title-box {
       h2 {
         color: $blue;
@@ -369,11 +388,11 @@
   }
 
   .img {
-    width: 800px;
-    height: 520px;
+    width: 100%;
+    aspect-ratio: 2 / 1;
     background-image: url("../images/main/img_partner.png");
     background-size: cover;
-    border-radius: 50px;
+    border-radius: 20px;
     background-position: center;
   }
 }
